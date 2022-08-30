@@ -7,5 +7,5 @@ val=prompt("Ingrese el valor(COP)");
 porcent=parseFloat(val)* 0.15;
 aumento=parseFloat(porcent)+ parseFloat(val);
 decremento=parseFloat(porcent)- parseFloat(val);
-console.log("Aumento:"+aumento);
-console.log("Decremento:"+decremento);
+alert("Aumento:"+aumento);
+alert("Decremento:"+decremento);

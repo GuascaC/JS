@@ -5,5 +5,5 @@ let cuadr = 0;
 let cubo = 0;
 cuadr = Math.pow(num,2) ; 
 cubo = Math.pow(num,3); 
-console.log("El cuadrado es:"+cuadr);
-console.log("El Cubo es:"+cubo)
+alert("El cuadrado es:"+cuadr);
+alert("El Cubo es:"+cubo);
