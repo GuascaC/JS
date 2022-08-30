@@ -1,0 +1,13 @@
+'use strict';
+let base = 0;
+let altur = 0;
+let cant = 0;
+let CantEst = 0;
+let total = 0;
+base = prompt("Ingrese Base: ");
+altur = prompt("Ingrese Altura: ");
+cant = prompt("Ingrese Cantidad de Estibas: ");
+cantEst = parseFloat(base)*parseFloat(altur);
+total = parseFloat(cant)*parseFloat(cantEst);
+console.log("Cantidad por Estiba: "+CantEst);
+console.log("Total: "+total);

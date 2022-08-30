@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+html{
+    background-color: antiquewhite;
+    border: 5px dotted cornflowerblue;
+}
+p{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+th{
+    border: 5px solid black;
+    align-items: center;
+    width: max-content;
+    background-color: #F0DDA0;
+}
+table{
+    margin: 0 auto;
+}
