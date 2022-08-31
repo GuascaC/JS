@@ -12,8 +12,8 @@ deno2=prompt("Ingrese el segundo denominador: ");
 res1 = parseFloat(num1) % parseFloat(deno1)
 res2 = parseFloat(num2) % parseFloat(deno2)
 if (res1 == res2){
-    console.log("Fracciones Equivalentes: "+res1)
+    alert("Fracciones Equivalentes: "+res1)
 }
 else{
-    console.log("Fracciones no Equivalentes: "+res1,""+res2)
+    alert("Fracciones no Equivalentes: "+res1,""+res2)
 }

@@ -1,0 +1,19 @@
+html{
+    background-color: bisque;
+    border: dotted cornflowerblue;
+}
+.estiloRed{
+    text-align: center;
+    font-family: cursive;
+    color: red;
+}
+button{
+    align-items: center;
+}
+.parrafo{
+    background-color:darkgrey;
+    font-family: sans-serif;
+}
+.ejemplo{
+    color: aqua;
+}

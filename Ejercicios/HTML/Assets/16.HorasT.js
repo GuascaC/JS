@@ -15,11 +15,11 @@ switch(true){
         mensaje = `Demasiadas Horas Trabajadas: ${horas}`;
         break; 
     case horas >= 38 && horas <= 56 :
-        console.log("Horas: "+horas);
-        console.log("Paga: "+total);
+        alert("Horas: "+horas);
+        alert("Paga: "+total);
         break;
     default:
         mensaje = `Error en las horas: ${horas}`;
         break;
 }
-console.log(mensaje);
+alert(mensaje);

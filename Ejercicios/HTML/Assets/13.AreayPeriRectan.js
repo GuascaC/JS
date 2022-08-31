@@ -7,5 +7,5 @@ largo=prompt("Ingrese el largo");
 ancho=prompt("Ingrese el ancho");
 area = parseFloat(largo) * parseFloat(ancho);
 perimetro = parseFloat(largo)*2+parseFloat(ancho)*2;
-console.log(area);
-console.log(perimetro);
+alert(area);
+alert(perimetro);

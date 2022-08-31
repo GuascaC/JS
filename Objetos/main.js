@@ -43,4 +43,5 @@ for (i of cristian){
 Object.keys(cristian).forEach((e) => console.log(e));
 /**
  * Tarea: Iterar el objeto con for
+ * 
  */

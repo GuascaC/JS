@@ -46,4 +46,4 @@ switch(true){
         mensaje = `Error en la Paga: ${paga}`;
         break;
 }
-console.log(mensaje);
+alert(mensaje);
