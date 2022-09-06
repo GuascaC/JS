@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400;600&display=swap" rel="stylesheet"> 
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="stylesheet" href="./styles (1).css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <img  src="./img/education_f8ru (1).svg" alt="educación">
+        <h1>Universidad Uniempresarial</h1>
+        
+        <div class="ola" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.00,49.85 C150.00,149.60 349.20,-49.85 500.00,49.85 L500.00,149.60 L-0.00,149.60 Z" style="stroke: none; fill: rgb(255, 255, 255);"></path></svg></div>
+
+    </header>
+    
+    <form class="form">
+        <h2>Registro</h2>
+        <label for="nombre">Nombres:</label>
+        <input
+        class="control"
+        id="nombre"
+        name="nombre"
+        placeholder="Ingrese nombre"
+        type="text"                    
+        required
+        />
+        <label for="apellido">Apellidos:</label>
+        <input
+        class="control"
+        id="apellido"
+        name="apellido"
+        placeholder="Ingrese apellido"
+        type="text"                    
+        required
+        />
+        <label for="promedio">Promedio:</label>
+        <input
+            class="control"
+            id="promedio"
+            name="promedio"
+            placeholder="Ingrese su promedio"
+            type="number"                    
+            required
+        />
+        <select class="control-s" name="opcion" id="opcion">
+            <option value="0" selected>Seleccione una opción</option>
+            <option value="estudiante">Estudiante</option>
+            <option value="profesor">Profesor</option>
+            <option value="administrativo">Administrativo</option>
+            <option value="egresado">Egresado</option>
+        </select>
+        <button type="button" class="btn" id="btn">Agregar</button>
+        <button type="button" class="btn" id="btnMostrar">Mostrar</button>
+    </form>
+    <section class="allCards">
+        <div class="cardsEstudiantes" id="cardsEstudiantes"></div>
+        <div class="" id="cardseProfesores"></div>
+        <div class="" id="cardsAdministrativo"></div>
+    </section>
+    <template id="templateEstudiante">       
+            <div class="card">
+                <h3 class="title-card"></h3>
+                <h4 class="data-card"></h4>
+                <p class="text-aprobado"></p>               
+                <p class="text-promedio"></p>
+                <button class="btnRegistrar">Registrar</button>                
+            </div>       
+    </template>
+    <template id="templateProfesor">      
+            <div class="card-body">
+                <h3>nombre</h3>
+                <h6></h6>
+                <p class="lead">Edad</p>
+            </div>       
+    </template>
+
+    <script type="module" src="./Scripts/main.js"></script>
+</body>
+</html>

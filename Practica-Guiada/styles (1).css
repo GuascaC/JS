@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-attachment: fixed;
+}
+.header{
+    background: #f25757;
+    background: linear-gradient(212deg, rgba(242,87,87,1) 0%, #f2db63 26%, #f22e76 90%, #f2b366 100%); 
+    width: 100%;
+    height: calc(100vh - 200px);
+    text-align: center;
+    overflow: hidden;   
+    margin: 0 auto;
+    background-attachment: fixed;
+    position: relative;
+}
+header > img{
+    width: 50%;
+    height: 180px;
+    margin-top: 5%;
+}
+.ola{
+    position: absolute;
+    bottom: 0;   
+    width: 100%;
+}
+.form{
+    width: 40%;
+    height: auto;
+    margin: 5% auto;
+    border-radius: 10px;
+    border: 4px solid #3C3D59 ;
+    padding: 25px 10px;
+    text-align: center;
+    
+}
+.form > input,label,button,select {
+    display: inline-block;
+    width: 80%;
+    margin: 3% 0;
+    font-size: 20px;
+}
+.form > input{
+    padding: 10px 2px;
+    border: none;
+    border-bottom: 1px solid #f25757;
+    outline: none;
+}
+.form > label{
+    text-align: left;
+    padding: 5px;
+}
+.control-s{
+    margin-top: 2%;
+    border: 1px solid #f25757;
+    padding: 8px;
+}
+.btn {
+    background: #f22e76;
+    background: linear-gradient(top, #f22e76, #f25757);    
+    background: linear-gradient(to bottom, #f22e76, #f25757);
+    border-radius: 28px;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #f2b366 2px;
+    text-decoration: none;
+  }  
+  .btn:hover {
+    background: #f2db63;
+    background:linear-gradient(top, #f2db63, #f2b366);   
+    background: linear-gradient(to bottom, #f2db63, #f2b366);
+    text-decoration: none;
+  }
+  .card{
+    width: 60%;
+    margin: 5% auto;
+    border: 2px solid #f22e76;
+    text-align: center;
+  }
+  .title-card{
+    padding: 2%;
+  }
+  .text-promedio{
+    font-size: 20px;
+    color:#f25757;
+  }
+  .text-aprobado{
+    font-size: 24px;
+    padding: 2% 0;
+  }
+  .btnRegistrar{
+    background: #f2db63;
+    background:linear-gradient(top, #f2db63, #f2b366);   
+    background: linear-gradient(to bottom, #f2db63, #f2b366);
+    text-decoration: none;
+    border-radius: 24px;
+    padding: 2%;
+    border: solid #f22e76 2px;
+  }
+  .alerta{
+    width: 25%;
+    height: 100px;   
+    background: #f25757;   
+    position: fixed;
+    top: calc(100vh - 400px);
+    left: 600px;
+    text-align: center; 
+    cursor: pointer;   
+  }
+  
+  .textAlerta{
+    width: 100%;
+    margin-top: 12%;
+    color: aliceblue;
+  }
+
+@media screen and (max-width: 768px) {
+    .form{
+        width: 60%;    
+        margin: 2% auto;   
+        border: 2px solid #3C3D59 ;
+        padding: 15px 5px;    
+    }
+}
+@media screen and (max-width: 500px) {
+    .form{
+        width: 70%;    
+        margin: 1% auto 3% auto;   
+        padding: 10px 2px;  
+        border: 1px solid #3C3D59 ;  
+    }
+    .form > input,label,button,select {     
+        margin: 2% 0;
+        font-size: 16px;
+    }
+    .form > input{
+        padding: 5px 1px;        
+    }
+    .form > label{       
+        padding: 2px;
+    }
+    .control-s{
+        margin-top: 1%;     
+        padding: 4px;
+    }
+    .btn{
+        font-size: 16px;
+    }
+}
+
+
