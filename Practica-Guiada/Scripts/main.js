@@ -1,5 +1,6 @@
 'use strict';
 import { validateString, validateAverage } from "./validate.js";
+import { 
 
 const btnAgregar = document.querySelector("#btn");
 const btnMostrar = document.querySelector("#btnMostrar");
