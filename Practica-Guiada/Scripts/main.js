@@ -1,6 +1,6 @@
 'use strict';
 import { validateString, validateAverage } from "./validate.js";
-import { 
+import { pintarCard,agregarEstudiante } from "./pintar.js"; 
 
 const btnAgregar = document.querySelector("#btn");
 const btnMostrar = document.querySelector("#btnMostrar");
@@ -12,15 +12,36 @@ btnAgregar.addEventListener("click", () => {
     const promedio = document.querySelector("#promedio").value;
     const opcion = document.querySelector("#opcion").value;
 
-    if (validateString(nombre) && validateString(apellido) && opcion != "0"){
+    if(validateString(nombre) && validateString(apellido) && opcion != "0"){
         if (!isNaN(parseFloat(promedio)) && (validateAverage(promedio))){
-            agregarEstudiante(promedio, apellido, apellido);
+            agregarEstudiante(nombre,apellido,promedio);
+            console.log("Validado");
         }else{
-            console.log("Error Promedio");
-        } 
+            console.log("Error promedio");
+            modalAlerta("Error promedio");
+        }
     }else{
+        modalAlerta("Error datos");
         console.log("Error datos");
-
     }
+    
 });
+
+btnMostrar.addEventListener("click",function(){
+    pintarCard("ESTUDIANTE");
+});
+
+function modalAlerta(cadena){
+    const alerta = document.createElement("div");
+    const texto = document.createElement("p");
+    texto.setAttribute("class", "textAlerta");
+    alerta.setAttribute("id", "alerta");
+    alerta.setAttribute("class", "alerta");
+    texto.innerHTML = `<strong>${cadena}</strong>`;
+    alerta.append(texto);
+    document.body.appendChild(alerta);
+    alerta.onclick = function(){
+        document.getElementById("alerta").remove();
+    }
+}
 

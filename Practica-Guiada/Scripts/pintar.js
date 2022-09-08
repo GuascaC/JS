@@ -32,4 +32,4 @@ const agregarEstudiante = (name, lastName, avg) => {
     };
     estudiantes.push(persona);
 }
- export 
+ export {pintaCard,agregarEstudiante};
