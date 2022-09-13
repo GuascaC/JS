@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1 style="padding: 5px;">Datos</h1>
+    <form style="padding: 0.2in;" id="form">
+  <div class="form-row"  >
+      <div class="form-group col-md-6">
+      <label for="inputNames">Nombre y Apellidos:</label>
+      <input type="text" class="form-control" id="inputNames" placeholder="Nombre y Apellidos">
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputAge">Edad</label>
+      <input type="number" class="form-control" id="inputAge">
+    </div>
+  </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Correo electrónico:</label>
+      <input type="email" class="form-control" id="inputEmail" placeholder="correo/email">
+    </div>    
+  </div>
+    <div class="form-group col-md-4">
+      <label for="inputCity">Ciudad</label>
+      <select id="inputCity" class="form-control">
+        <option selected>Selecciona</option>
+        <option value="ok">Bogotá</option>
+        <option value="ok">Medellín</option>
+        <option value="ok">Cúcuta</option>        
+      </select>
+    </div><br>    
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="checkPolitica">
+      <label class="form-check-label" for="gridCheck">
+        Acepto política de datos
+      </label>
+    </div>
+  </div><br> 
+  <button type="submit" id="btnDatos" class="btn btn-info">Enviar Datos</button>
+</form>
+<script src="/Formularios/main.js"></script>
+</body>
+</html>
