@@ -1,0 +1,51 @@
+*{
+ margin: 0;
+ padding: 0; 
+ box-sizing: border-box;  
+}
+
+.main{
+    width: 95%;
+    background-color: brown;
+    border: 2px solid black;
+    margin: 2%;  
+   
+}
+.main > p{
+   padding: 1%;
+   text-align: center;
+}
+.mainRed{
+    width: 95%;
+    background-color: rgb(66, 5, 5);
+    border: 2px solid black;
+    margin: 2%;  
+    color: aliceblue;
+}
+.mainBlue{
+    width: 95%;
+    background-color: rgb(2, 2, 37);
+    border: 2px solid rgb(18, 92, 152);
+    margin: 2%;  
+    color: bisque;
+}
+.bodyBlue{
+    background-color: coral;
+}
+.mainBrown{
+    width: 95%;
+    background-color: rgb(2, 2, 37);
+    border: 2px solid rgb(18, 92, 152);
+    margin: 2%;  
+    color: bisque;
+}
+.bodyBrown{
+    background-color: coral;
+}
+body{
+    background-color: dimgray;
+}
+
+.bodyRed{
+    background-color: burlywood;
+}
